@@ -1506,21 +1506,27 @@
   *
   * ------------------------------------------------------------------- */
  #home {
-  background-attachment: fixed;
+   width: 100%;
+   height: 100%;
+   background-color: #151515;
+   background: url(../images/flag.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   /* background-attachment: fixed; */
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   background-size: cover;
+   /* min-height: 804px;
+   position: relative; */
  }
  #home .overlay {
-  width: 100%;
-  height: 100%;
-  background-color: #151515;
-  background: url(../images/flag.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  min-height: 804px;
-  position: relative;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   opacity: .2;
+   background-color: #19191b;
  }
  
  .home-content-table {
